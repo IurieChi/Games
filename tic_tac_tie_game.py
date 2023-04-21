@@ -1,4 +1,4 @@
-# simple program which pretends to play tic-tac-toe with the user
+# simple game which pretends to play tic-tac-toe with the user
 
 from random import randrange
  
@@ -19,10 +19,10 @@ def display_board(board):
 #     # and prints it out to the console.
     rows = len(board)
     cols = len(board)
-    print("---+---+---")
+    print("+---+---+---+")
     for r in range(rows):
-        print(board[r][0], " |", board[r][1], "|", board[r][2])
-        print("---+---+---")
+        print("|",board[r][0], "|",board[r][1], "|",board[r][2],"|")
+        print("+---+---+---+")
     return board
 
 
@@ -44,3 +44,5 @@ def display_board(board):
 # def draw_move(board):
 #     # The function draws the computer's move and updates the board.
 
+table= create_grid()
+display_board(table)
