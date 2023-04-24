@@ -63,10 +63,17 @@ def make_list_of_free_fields(board):
 #     # the player using 'O's or 'X's has won the game
 
 
-# def draw_move(board):
+def draw_move(board):
 #     # The function draws the computer's move and updates the board.
+    free = make_list_of_free_fields(board) # make a list of free fields
+    cnt = len(free)
+    if cnt > 0:	# if the list is not empty, choose a place for 'X' and set it
+        this = randrange(cnt)   
+        row, col = free[this]
+        board[row][col] = 'X'
+        display_board(board)
 
 table= create_grid()
 display_board(table)
 enter_move(table)
-print(make_list_of_free_fields(table))
+draw_move(table)
