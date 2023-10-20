@@ -1,1 +1,1 @@
-Tic Tac Tie Game   simple game which pretends to play tic-tac-toe with the user
+Tic Tac Toe Game -----  simple game pc play tic-tac-toe with the user
